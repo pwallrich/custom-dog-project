@@ -1,0 +1,6 @@
+flask
+scipy
+numpy
+keras
+cv2
+tqdm
