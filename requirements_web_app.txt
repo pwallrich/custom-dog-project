@@ -1,0 +1,8 @@
+flask
+scipy
+numpy
+keras
+opencv-python
+tqdm
+
+00b91f12-6026-4628-99c2-3fbb37825c14

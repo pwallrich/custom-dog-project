@@ -1,0 +1,14 @@
+deploy_to_heroku:
+  stage: deploy
+  image: docker:latest
+  variables:
+    DOCKER_DRIVER: overlay
+  services:
+    - docker:dind
+  before_script:
+    - apk add git --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing
+    - apk add openssl --update-cache
+  script:
+    - docker login --username=p.wallrich@gmail.com --password=$HEROKU_AUTH_TOKEN registry.heroku.com
+    - docker build -t registry.heroku.com/custom-dog-app/web .
+    - docker push registry.heroku.com/custom-dog-app/web
