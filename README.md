@@ -111,4 +111,8 @@ TODO:
 
 To start the Flask Webserver run `python web_app.py`
 
+The webserver was built with the help of https://youtu.be/f6Bf3gl4hWY
+
 use route http://localhost:5000/test to upload a custom image
+
+
