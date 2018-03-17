@@ -4,7 +4,7 @@
 [image2]: ./images/vgg16_model.png "VGG-16 Model Keras Layers"
 [image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
-## This project is a clone and edit of Udacity's deep learning dog project found at https://github.com/udacity/dog-project
+__This project is a clone and edit of Udacity's deep learning dog project found at https://github.com/udacity/dog-project__
 
 ## Project Overview
 
@@ -111,4 +111,4 @@ TODO:
 
 To start the Flask Webserver run `python web_app.py`
 
-use route http://localhost:5000/test to upload an image and see wait for the response
+use route http://localhost:5000/test to upload a custom image
