@@ -14508,6 +14508,7 @@ _________________________________________________________________
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Explanation:</strong>
 I first tested VGG19 and the classifier Layers I used above. The result wasn't good (about 60 %). Adding new Dense Layers, or changing the parameters of the Dense Layers didn't really improve the networks performance. Therefore I decided to try out resnet. Resnet together with the classifier layers I used above actually enhanced the predictions a lot. The network can now predict about 81% of the test set correctly.</p>
+<p>Using transfer learning enhances the accuracy from about 9 % with the custom neural net to about 81 %. The pretrained neural net is already good at classifiying different type of objects. This also means, that the pre trained neural net is already good at extrating features of images. So instead of building a new net, that has to learn to understand what's inside a picture, a pretrained neural net can be used. Using this pretained net to extract the features only the classification has to be learned with a custom architecture. This enhances the prediction accuracy and training time. Only the classification part of the neural net has to be trained and not the complete neural net.</p>
 
 </div>
 </div>
